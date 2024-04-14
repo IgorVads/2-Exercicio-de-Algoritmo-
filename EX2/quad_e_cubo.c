@@ -2,17 +2,25 @@
 #include <locale.h>
 #include <math.h>
 
+/*Um algoritmo que solicita e lÃª dois nÃºmeros, calcula e exibe o quadrado do 
+primeiro e o cubo do segundo.*/
+
 int main(int argc, char** argv)
 {
     setlocale(LC_ALL, "portuguese");
+	
     float quad, cubo, result1, result2;
-    printf("Digite um número: ");
+	
+    printf("Digite um nÃºmero: ");
     	scanf("%f", &quad);
-    printf("Digite um número: ");
+	
+    printf("Digite um nÃºmero: ");
     	scanf("%f", &cubo);
-    result1 = pow(quad,2); //Para dar o resulto do quadrado do número.
-    result2 = pow(cubo,3); //Para dar o resulto do cubo do número.
-    	printf("O quadrado do seu número é: %.0f\n", result1);
-    	printf("O cubo do seu número é: %.0f\n", result2);
+	
+    result1 = pow(quad,2); //Para dar o resulto do quadrado do nÃºmero.
+    result2 = pow(cubo,3); //Para dar o resulto do cubo do nÃºmero.
+	
+    	printf("O quadrado do seu nÃºmero Ã©: %.0f\n", result1);
+    	printf("O cubo do seu nÃºmero Ã©: %.0f\n", result2);
 	return 0;
 }
